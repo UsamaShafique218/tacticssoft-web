@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Work+Sans:wght@100..900&display=swap');
+
+:root {
+  --autoWidth: 111.125em;
+  /* 1778px */
+  --family: "Inter", sans-serif;
+  --work-sans: "Work Sans", sans-serif;
+
+  --headerHeight: 90px;
+
+  --transition: all 0.3s ease;
+  --p_color: #1cd8c9;
+  --black: #000;
+  --white: #fff;
+  --text-muted: #666666;
+  --border_color: #E6E8EE;
+
+
+
+
+
+  --baseFS: 16px;
+  --fs16: 1em;
+  --fs18: 1.125em;
+  --fs20: 1.25em;
+  --fs22: 1.375em;
+  --fs24: 1.5em;
+  --fs26: 1.625em;
+  --fs28: 1.75em;
+  --fs30: 1.875em;
+  --fs36: 2.25em;
+  --fs40: 2.5em;
+  --fs48: 3em;
+  --fs56: 3.5em;
+  --fs80: 5em;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol,
+ul {
+  margin: 0;
+  list-style: none;
+  margin: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b {
+  margin: 0;
+  font-weight: normal;
+}
+
+em {
+  font-style: normal;
+}
+
+input,
+textarea,
+select,
+button {
+  border: 0px none;
+  border-radius: 0px;
+  background: none;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+  font-family: var(--family);
+  font-weight: 400;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  height: auto;
+  outline: none;
+}
+
+input[type='submit'] {
+  border-radius: 0px;
+  -webkit-appearance: none;
+  appearance: none;
+  outline: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Remove arrows for Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+body.hidden {
+  overflow: hidden !important;
+}
+
+textarea {
+  resize: none;
+  overflow: auto;
+}
+
+:focus {
+  outline: none;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0px;
+  visibility: hidden;
+}
+
+.clearfix {
+  display: block;
+  zoom: 1;
+}
+
+i,
+em {
+  font-style: normal;
+}
+
+.overflow_hidden {
+  overflow: hidden !important;
+}
+
+html {
+  min-height: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* overflow-x: hidden;  */
+
+body {
+  width: 100%;
+  font-family: var(--family);
+  color: var(--p_color);
+  font-size: var(--baseFS);
+  font-weight: 400;
+  overflow-x: hidden;
+  max-width: 100%;
+  letter-spacing: -0.5px;
+}
+
+.mob_menuBtn {
+  display: none;
+}
+
+
+.hamburger-lines {
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: 40px;
+  justify-content: space-between;
+  padding: 10.9px 8px;
+  position: relative;
+  width: 40px;
+  z-index: 999
+}
+
+.hamburger-lines .line {
+  background: var(--dark);
+  border-radius: 10px;
+  display: block;
+  height: 1.4px;
+  width: 100%
+}
+
+.hamburger-lines .line1 {
+  transform-origin: 0 0;
+  transition: all .4s ease-in-out
+}
+
+.hamburger-lines .line2 {
+  transition: all .2s ease-in-out
+}
+
+.hamburger-lines .line3 {
+  transform-origin: 0 100%;
+  transition: all .4s ease-in-out
+}
+
+.hamburger-lines.open .line {
+  margin-left: 7px;
+  background-color: #fff;
+}
+
+.hamburger-lines.open .line1 {
+  transform: rotate(45deg)
+}
+
+.hamburger-lines.open .line2 {
+  transform: scaleY(0)
+}
+
+.hamburger-lines.open .line3 {
+  transform: rotate(-45deg)
+}
+
+.autoContent {
+  max-width: var(--autoWidth);
+  padding: 0px 20px;
+  margin: auto;
+  width: 100%;
+}
