@@ -14,7 +14,7 @@ function BlogDetails() {
                         <div className="banner_heading">
                             <strong data-aos="fade-up">IT</strong>
                             <h1 data-aos="fade-up">Blog5</h1>
-                            <p>
+                            <p data-aos="fade-up">
                                 January 3, 2026
                                 . 5 minutes read</p>
                         </div>

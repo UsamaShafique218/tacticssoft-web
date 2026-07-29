@@ -3229,5 +3229,22 @@
     padding-bottom: 20px;
 }
 
-.faqs_blogs_links{ padding-left: 20px; padding-top: 10px; border-left: 1px solid var(--black); }
+.faqs_blogs_links{ padding-left: 20px; padding-top: 20px; border-left: 1px solid var(--black); }
+.faqs_blogs_links h3 a{ color: var(--black); }
 .faqs_blogs_links ul{ border-left: 1px solid var(--black); }
+
+.blog_details_right h3{ color: var(--black); font-size: var(--fs24); font-weight: 600; line-height: 1.2em; padding-bottom: 10px; }
+
+.blog_details_right .social_links{ margin-bottom: 20px; }
+.blog_details_right .social_links a{ color: var(--black); border-color: var(--black); }
+.blog_details_right .social_links a:hover{  border-color: var(--p_color); }
+
+.consult_tactics_box{ background-color: #0E274C; border-radius: 26px; overflow: hidden; }
+
+.consult_tactics_box_img{ width: 100%; height: auto; }
+.consult_tactics_box_img img{ width: 100%; height: auto; display: block; object-fit: cover; }
+.consult_tactics_content{ padding: 20px; }
+.consult_tactics_content{ text-align: center; }
+.consult_tactics_content h2{ color: var(--white); font-size: var(--fs24); font-weight: 700; line-height: 1.4em; padding-bottom: 20px; }
+
+
