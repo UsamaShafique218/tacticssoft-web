@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom"; 
+import { Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
 import Header from "./components/Header";
 import Home from "./pages/Home";
@@ -20,7 +20,7 @@ import EcommerceSolutions from "./pages/services/EcommerceSolutions";
 import MobileAppDevelopment from "./pages/services/MobileAppDevelopment";
 import TrainingCourses from "./pages/services/TrainingCourses";
 import WebDevelopment from "./pages/services/WebDevelopment";
-import CoursesScreen from "./pages/CoursesScreen";
+// import CoursesScreen from "./pages/CoursesScreen";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsConditions from "./pages/TermsConditions";
 
@@ -28,17 +28,18 @@ import TermsConditions from "./pages/TermsConditions";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import BlogDetails from "./pages/BlogDetails";
 
 
 
 
 function App() {
   useEffect(() => {
-  AOS.init({
-    duration: 1000,
-    once: true,
-  });
-}, []);
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
   return (
     <>
       <Header />
@@ -60,14 +61,15 @@ function App() {
           <Route path="/mobile-app-development" element={<MobileAppDevelopment />} />
           <Route path="/it-digital-skills-training-courses" element={<TrainingCourses />} />
           <Route path="/web-development" element={<WebDevelopment />} />
-          <Route path="/courses" element={<CoursesScreen />} />
+          {/* <Route path="/courses" element={<CoursesScreen />} /> */}
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-conditions" element={<TermsConditions />} />
+          <Route path="/blog-detail" element={<BlogDetails />} />
 
-          
-          
-          
-          
+
+
+
+
         </Routes>
       </div>
       <Footer />

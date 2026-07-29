@@ -36,8 +36,8 @@ function AboutCards() {
                             <div className="icon_wrapper">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
-                                    width="24"
-                                    height="24"
+                                    width="32"
+                                    height="32"
                                     viewBox="0 0 24 24"
                                     fill="none"
                                     stroke="currentColor"
@@ -45,14 +45,14 @@ function AboutCards() {
                                     strokeLinecap="round"
                                     strokeLinejoin="round"
                                 >
-                                    <path d="M12 2v8" />
-                                    <path d="m4.93 10.93 4.24 4.24" />
-                                    <path d="M2 18h8" />
-                                    <path d="M20 18h2" />
-                                    <path d="m19.07 10.93-4.24 4.24" />
-                                    <circle cx="12" cy="18" r="4" />
+                                    <path d="M12 2L12 22" />
+                                    <path d="M5 9L12 2L19 9" />
+                                    <path d="M5 9H19" />
+                                    <path d="M7 9V15C7 17.2 9.2 19 12 19C14.8 19 17 17.2 17 15V9" />
+                                    <circle cx="12" cy="9" r="2" />
                                 </svg>
                             </div>
+
                             <h3 className="card_title">Our Mission</h3>
                         </div>
                         <p className="card_text">

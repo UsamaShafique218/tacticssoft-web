@@ -17,7 +17,7 @@ const initialBlogs = [
         category: "IT",
         readTime: "5 MIN READ",
         image: blog_img1, 
-        link: "#"
+        link: "/blog-detail"
     },
     {
         id: 2,

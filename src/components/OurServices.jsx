@@ -1,39 +1,44 @@
 import React from "react";
 
-// Custom Icon Images Import
-// import choose_us_sec_img from "../assets/images/choose_us_sec_img.png"  
+ import services_icon1 from "../assets/icons/web-address.png"  
+ import services_icon2 from "../assets/icons/mobile-app.png"  
+ import services_icon3 from "../assets/icons/research.png"  
+ import services_icon4 from "../assets/icons/ai_icon.png"  
+ import services_icon5 from "../assets/icons/customer-service.png"  
+ import services_icon6 from "../assets/icons/talent-acquisition.png"  
 
+ 
 
 
 function OurServices() {
     const services = [
         {
-            //   icon: choose_us_sec_img,
+            icon: services_icon1,
             title: "Web Design & Development",
             description: "Building responsive websites tailored to your business needs.",
         },
         {
-            //   icon: mobileIcon,
+            icon: services_icon2,
             title: "Mobile App Development",
             description: "Creating customized top-notch mobile apps for better user engagement.",
         },
         {
-            //   icon: seoIcon,
+            icon: services_icon3,
             title: "SEO",
             description: "Optimizing your site to rank higher & drive organic traffic to attract leads.",
         },
          {
-            //   icon: seoIcon,
+            icon: services_icon4,
             title: "AI & Chatbot Solutions",
             description: "AI chatbots for automation and better customer experience.",
         },
         {
-            //   icon: seoIcon,
+            icon: services_icon5,
             title: "IT Consulting",
             description: "Providing expert guidance on technology and system optimization.",
         },
         {
-            //   icon: seoIcon,
+            icon: services_icon6,
             title: "Custom Software Solutions",
             description: "Developing personalized software to streamline business processes.",
         },
@@ -54,7 +59,7 @@ function OurServices() {
                     {services.map((service, index) => (
                         <div className="service_card" key={index} data-aos="fade-up">
                             <div className="service_icon">
-                                {/* <img src={service.icon} alt={service.title} /> */}
+                                <img src={service.icon} alt={service.title} />
                             </div>
                             <h4>{service.title}</h4>
                             <p>{service.description}</p>

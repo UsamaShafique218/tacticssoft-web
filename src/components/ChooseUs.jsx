@@ -1,5 +1,10 @@
 import React from "react";
 import choose_us_sec_img from "../assets/images/choose_us_sec_img.png"
+import choose_us_icon1 from "../assets/icons/sugar_cube.png"
+import choose_us_icon2 from "../assets/icons/medal.png"
+import choose_us_icon3 from "../assets/icons/team.png"
+import choose_us_icon4 from "../assets/icons/check.png"
+
 
 function ChooseUs() {
     return (
@@ -15,7 +20,9 @@ function ChooseUs() {
                         <div className="choose_us_col">
                             <div className="choose_us_card" data-aos="fade-up">
                                 <div className="icon_box">
-                                    <i></i>
+                                    <i>
+                                        <img src={choose_us_icon1} alt="Sugar Cube Icon" />
+                                    </i>
                                 </div>
                                 <h3>Top Rated</h3>
                                 <p>
@@ -28,7 +35,9 @@ function ChooseUs() {
 
                             <div className="choose_us_card" data-aos="fade-up">
                                 <div className="icon_box">
-                                    <i></i>
+                                    <i>
+                                        <img src={choose_us_icon2} alt="Medal Icon" />
+                                    </i>
                                 </div>
                                 <h3>Professional Staff</h3>
                                 <p>
@@ -49,7 +58,9 @@ function ChooseUs() {
                         <div className="choose_us_col" >
                             <div className="choose_us_card" data-aos="fade-up">
                                 <div className="icon_box">
-                                    <i></i>
+                                    <i>
+                                        <img src={choose_us_icon3} alt="Team Icon" />
+                                    </i>
                                 </div>
                                 <h3>Customer-Centric Focus</h3>
                                 <p>
@@ -61,7 +72,7 @@ function ChooseUs() {
 
                             <div className="choose_us_card" data-aos="fade-up">
                                 <div className="icon_box">
-                                    <i></i>
+                                    <i><img src={choose_us_icon4} alt="Check Icon" /></i>
                                 </div>
                                 <h3>Fair Prices</h3>
                                 <p>

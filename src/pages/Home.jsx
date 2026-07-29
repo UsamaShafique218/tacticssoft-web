@@ -1,7 +1,7 @@
 import AboutUs from "../components/AboutUs";
 import Banner from "../components/Banner";
 import ChooseUs from "../components/ChooseUs";
-import OurCourses from "../components/OurCourses";
+// import OurCourses from "../components/OurCourses";
 import OurServices from "../components/OurServices";
 import RequestQuote from "../components/RequestQuote";
 import Testimonial from "../components/Testimonial";
@@ -13,7 +13,7 @@ function Home() {
     <Testimonial />
     <ChooseUs />
     <OurServices />
-    <OurCourses />
+    {/* <OurCourses /> */}
     <AboutUs />
     <RequestQuote />
     </>

@@ -5,6 +5,14 @@ import { Navigation, Autoplay } from 'swiper/modules';
 // Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
+import { Link } from 'react-router-dom';
+
+
+import stat_icon1 from "../assets/icons/collaboration.png"
+import stat_icon2 from "../assets/icons/review.png"
+import stat_icon3 from "../assets/icons/layers.png"
+
+
 
 function Banner() {
   const slidesData = [
@@ -42,8 +50,8 @@ function Banner() {
                     <h1 className="banner_title">{slide.title}</h1>
                     <p className="banner_desc">{slide.description}</p>
                     <div className="banner_btns">
-                      <a href="#quote" className="all_btn">Get a Quote</a>
-                      <a href="#contact" className="all_btn btn_outline">Contact Us</a>
+                      <a href="#request-quote" className="all_btn">Get a Quote</a>
+                      <Link to="/contact" className="all_btn btn_outline">Contact Us</Link>
                     </div>
                   </div>
                 </SwiperSlide>
@@ -56,7 +64,7 @@ function Banner() {
               
               <div className="banner_footer_li bg_cyan" data-aos="fade-up">
                 <div className="stat_icon">
-                  <i className="experience_icon"></i>
+                  <img src={stat_icon1} alt="Collaboration Icon" /> 
                 </div>
                 <div className="stat_info">
                   <span>Years of Experience</span>
@@ -66,7 +74,7 @@ function Banner() {
 
               <div className="banner_footer_li bg_black" data-aos="fade-up">
                 <div className="stat_icon">
-                  <i className="icon_clients"></i> 
+                  <img src={stat_icon2} alt="Review Icon" /> 
                 </div>
                 <div className="stat_info">
                   <span>Satisfied Clients</span>
@@ -76,7 +84,7 @@ function Banner() {
 
               <div className="banner_footer_li bg_cyan" data-aos="fade-up">
                 <div className="stat_icon">
-                  <i className="icon_projects"></i> {/* Replace with your SVG/Image */}
+                  <img src={stat_icon3} alt="Layers Icon" /> 
                 </div>
                 <div className="stat_info">
                   <span>Completed Projects</span>
