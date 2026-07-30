@@ -1325,8 +1325,7 @@
     box-shadow: 0 0 0 3px rgba(0, 210, 181, 0.1);
 }
 
-
-/* usama */
+ 
 .form_wrapper .form_group textarea {
     resize: none;
 }
@@ -3340,4 +3339,212 @@
   margin-top: 16px;
   padding-top: 12px;
   border-top: 1px solid #e2e8f0; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+
+
+
+
+
+
+ 
+.job_page_container { 
+  margin: 0 auto; 
+  padding: 100px 0px; 
+}
+
+.job_layout{
+  display: flex;
+  gap: 40px;
+  align-items: flex-start; 
+}
+
+/* Left Section: Job Details */
+.job_details {
+  flex: 1.2;
+}
+
+.job_title {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  color: #000;
+}
+
+.job_meta {
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.job_meta p {
+  margin: 4px 0;
+}
+
+.section_title {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 20px 0 10px 0;
+  color: #000;
+}
+
+.job_description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.skills_list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 8px;
+}
+
+.skills_list li {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+  align-items: flex-start;
+}
+
+.job_overview {
+  margin-top: 15px;
+}
+ 
+.job_form_card {
+  flex: 0.8;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 24px;
+  background-color: #ffffff;
+}
+ 
+
+.form_label {
+  display: block;
+  font-size: 13px;
+  font-weight: bold; 
+  color: #333;
+}
+
+.job_form_card .form_label{ margin-bottom: 10px; }
+
+.job_form_card .form_group{ padding-bottom: 20px;}
+
+.required-star {
+  color: #ef4444;
+}
+
+.form_input,
+.form_textarea {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8fafc;
+  box-sizing: border-box;
+  font-size: 14px;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+.form_input:focus,
+.form_textarea:focus {
+  outline: none;
+  border-color: var(--p_color);
+  background-color: #ffffff;
+}
+
+.file_input {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.file-hint {
+  font-size: 11px;
+  color: #666;
+  margin-top: 4px;
+  display: block;
+} 
+.checkbox-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+ 
+.checkbox-input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 18px;
+  height: 18px;
+  min-width: 18px; 
+  border: 1.5px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  margin-top: 2px;
+  background-color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hover Effect */
+.checkbox-input:hover {
+  border-color: #000;
+}
+ 
+.checkbox-input:focus {
+  border-color: #000;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+} 
+.checkbox-input:checked {
+  background-color: var(--p_color);
+  border-color: var(--p_color);
+}
+ 
+.checkbox-input:checked::after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 1px;
+  width: 4px;
+  height: 9px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+ 
+.checkbox-label {
+  font-size: 12px;
+  color: #555;
+  line-height: 1.4;
+  cursor: pointer;
+}
+  
+@media (max-width: 768px) {
+  .job-layout {
+    flex-direction: column;
+    gap: 24px;
+  }
 }

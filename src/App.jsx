@@ -29,6 +29,7 @@ import TermsConditions from "./pages/TermsConditions";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import BlogDetails from "./pages/BlogDetails";
+import JobDetailsPage from "./pages/JobDetailsPage";
 
 
 
@@ -65,6 +66,7 @@ function App() {
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-conditions" element={<TermsConditions />} />
           <Route path="/blog-detail" element={<BlogDetails />} />
+          <Route path="/job-details" element={<JobDetailsPage />} />
 
 
 

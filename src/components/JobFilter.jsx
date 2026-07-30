@@ -67,13 +67,13 @@ export default function JobFilter() {
   const [selectedType, setSelectedType] = useState('');
 
   const jobs = [
-    {
-      id: 1,
-      title: 'Business Developer',
-      category: 'Business Developer',
-      type: 'Full Time',
-      link: '#'
-    },
+    // {
+    //   id: 1,
+    //   title: 'Business Developer',
+    //   category: 'Business Developer',
+    //   type: 'Full Time',
+    //   link: '/job-details'
+    // },
   ];
 
   const categoryOptions = [
