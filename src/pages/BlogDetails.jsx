@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import blog_img1 from "../assets/images/blog_img1.png"
 import BlogLayout from "../components/BlogLayout";
+import BlogsSlider from "../components/BlogsSlider";
 
 
 function BlogDetails() {
@@ -22,6 +23,8 @@ function BlogDetails() {
                 </div>
             </div> 
             <BlogLayout /> 
+            <BlogsSlider />
+            
         </div>
     );
 }

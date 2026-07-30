@@ -13,7 +13,7 @@ import SocialLinks from "../components/SocialLinks";
 const breadcrumbLinks = [
   { label: "Home", link: "/" },
   { label: "Blogs", link: "/blogs" },
-  { label: "AI Chatbot Development", link: "" },
+  { label: "Blog5", link: "" },
 ];
 
 const BlogLayout = () => {

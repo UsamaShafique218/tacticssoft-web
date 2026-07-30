@@ -3050,8 +3050,7 @@
 }
 
 .arrow_btn {
-    padding: 10px;
-    background: red;
+    padding: 10px; 
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -3061,6 +3060,9 @@
     color: var(--white);
     background-color: var(--p_color);
 }
+
+.mobile_sidebar .arrow_btn{ background-color: transparent; color: var(--black); padding: 0px; width: 30px; height: 30px; }
+.mobile_sidebar .arrow_btn svg{ width: 18px; height: 18px; }
 
 .arrow_btn svg {
     width: 46px;
@@ -3248,3 +3250,94 @@
 .consult_tactics_content h2{ color: var(--white); font-size: var(--fs24); font-weight: 700; line-height: 1.4em; padding-bottom: 20px; }
 
 
+
+
+
+
+
+ 
+
+.blogs_slider_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.slider_title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.slider_navigation {
+  display: flex;
+  gap: 12px;
+}
+
+.custom_prev,
+.custom_next {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: #0284c7; /* Arrow blue color */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.custom_prev:hover,
+.custom_next:hover {
+  transform: scale(1.15);
+}
+
+
+ 
+.blogs_slider .swiper-slide {
+  height: auto;  
+  display: flex;
+}
+ 
+.blogs_slider .blog_card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  
+  background: #ffffff;  
+  border-radius: 8px;  
+  overflow: hidden;
+}
+ 
+.blogs_slider .blog_card_img {
+  width: 100%;
+  height: 220px; 
+  overflow: hidden;
+}
+
+.blogs_slider .blog_card_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+ 
+.blogs_slider .blog_card_body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 16px;
+}
+
+.blogs_slider .blog_card_title {
+  margin-bottom: auto;  
+}
+
+.blogs_slider .blog_card_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid #e2e8f0; 
+}
