@@ -13,8 +13,8 @@ function BlogDetails() {
                 <div className="autoContent">
                     <div className="banner_inner">
                         <div className="banner_heading">
-                            <strong data-aos="fade-up">IT</strong>
-                            <h1 data-aos="fade-up">Blog5</h1>
+                            <strong data-aos="fade-up">AI/ML</strong>
+                            <h1 data-aos="fade-up">AI Chatbot Development: Build Bots That Scale Your Business</h1>
                             <p data-aos="fade-up">
                                 January 3, 2026
                                 . 5 minutes read</p>

@@ -228,6 +228,7 @@
     display: inline-block;
     border: 1px solid var(--p_color);
     transition: var(--transition);
+    text-align: center !important;
 }
 
 .all_btn:hover {
@@ -1160,11 +1161,7 @@
 }
 
 @media (max-width: 992px) {
-    .about_us_inner {
-        grid-template-columns: 1fr;
-        gap: 3em;
-    }
-
+    
     .main_img {
         width: 100%;
     }
@@ -3341,24 +3338,7 @@
   border-top: 1px solid #e2e8f0; 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-/*  */
-
-
-
-
-
+ 
 
  
 .job_page_container { 

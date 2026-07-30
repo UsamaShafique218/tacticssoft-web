@@ -12,8 +12,8 @@ import SocialLinks from "../components/SocialLinks";
 
 const breadcrumbLinks = [
   { label: "Home", link: "/" },
-  { label: "Blogs", link: "/blogs" },
-  { label: "Blog5", link: "" },
+  { label: "AI/ML", link: "" },
+  { label: "AI Chatbot Development: Build Bots That Scale Your Business", link: "" },
 ];
 
 const BlogLayout = () => {
@@ -48,7 +48,8 @@ const BlogLayout = () => {
                   </li>
                   <li data-aos="fade-up">
                     <a href="#section2">
-                      Key Strategies for Deployment
+                      Why Scaling Enterprise Chatbots Is a Different Game
+                      Basic Building Blocks of Scalable AI Chatbots 
                     </a>
                   </li>
                   <li data-aos="fade-up">
@@ -77,8 +78,8 @@ const BlogLayout = () => {
 
                 <div className="faqs_blogs_links">
                   <h3><a href="#faqs_main">FAQs</a></h3>
-                  
-                  <ul> 
+
+                  <ul>
                     <li data-aos="fade-up">
                       <a href="#faqs_list1">1. Why should AI chatbots be relevant to businesses?</a>
                     </li>
@@ -106,16 +107,16 @@ const BlogLayout = () => {
             <div className="blog_details_sec">
               <p data-aos="fade-up">AI chatbot development is taking off in the business sector and more than three-quarters of businesses are now using AI chatbots in one business operation or another. Indeed, it is projected that AI will do up to <a href="#">95 percent of customer interactions</a> by the end of 2025. Corporations are adopting a conversational AI to automate customer service, improve business processes and connect with their clients 24/7.</p>
               <p data-aos="fade-up">However, the difference between one chatbot to serve a small application and enterprise chatbots to serve a multinational corporation?</p>
-              <p> data-aos="fade-up"That is a different ball game altogether, and has its own challenges and enormous opportunities.</p>
+              <p>That is a different ball game altogether, and has its own challenges and enormous opportunities.</p>
               <p data-aos="fade-up">Firms are allocating resources to AI-based conversational bots to automate customer care and internal processes, but the scaling of such systems cannot be achieved without a well-thought out and strong architecture.</p>
-              <p data-aos="fade-up">If you're still exploring the fundamentals, read our <a href="#">AI chatbots for business growth guide</a> to understand types, benefits, and real-world use cases before diving into enterprise-scale development.</p>
+              <p data-aos="fade-up">If you’re still exploring the fundamentals, read our <a href="#">AI chatbots for business growth guide</a> to understand types, benefits, and real-world use cases before diving into enterprise-scale development.</p>
             </div>
 
             <div className="blog_details_sec" id="section1">
               <h3 data-aos="fade-up">Why Scaling Enterprise Chatbots Is a Different Game</h3>
               <img src={blog_details_img1} alt="#" data-aos="fade-up" />
               <p data-aos="fade-up">When you have tried simple chatbots, you can guess that they are able to respond to simple questions on a website. However, to take that to the level of virtual assistants is like trying to take a small restaurant and turn it into a fast-food chain country-wide. Users multiply, queries become more complex and integration and compliance requirements become out of this world. A bot which had been well behaved with a few hundred chats may crumble under tens of thousands.</p>
-              <p data-aos="fade-up">Majority of the teams begin with off-the-shelf natural language processing (NLP) products or a basic rule-based bot. It is equivalent to constructing with LEGO blocks that are fast to boot but you bang on a wall when there is a traffic spike or when decoupling with the legacy systems.</p>
+              <p data-aos="fade-up">Majority of the teams begin with off-the-shelf natural language processing (NLP) products or a basic rule-based bot. It is equivalent to constructing with LEGO blocks that are fast to boot but you bang on a wall when there is a traffic spike or when decoupling with the legacy systems. </p>
               <p data-aos="fade-up">Some of the frequent problems businesses face include slow response time, bots not understanding subtle questions or failure to transition to human agents where necessary.</p>
               <p data-aos="fade-up"><strong>Sound familiar? </strong></p>
               <p data-aos="fade-up">In case a bot cannot scale gracefully, you may have wasted opportunities, customers who become frustrated, and support that is overwhelmed with tickets.</p>

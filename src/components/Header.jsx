@@ -127,7 +127,7 @@ function Header() {
                             </div>
 
                             <div className="header_btn">
-                                <a href="/#request-quote" className="all_btn navLink" onClick={handleQuoteClick}>
+                                <a href="/#request-quote" className="all_btn" onClick={handleQuoteClick}>
                                     Free Quote
                                 </a>
                             </div>

@@ -18,33 +18,10 @@ function BlogsSlider({ blogs = [] }) {
       image: blog_img1,
       category: "AI/ML",
       title: "AI Chatbot Development: Build Bots That Scale Your Business",
-      link: "/blog",
+      link: "/blog-detail",
       readTime: "5 MIN READ",
     },
-    {
-      id: 2,
-      image: blog_img1,
-      category: "IT",
-      title: "Blog5",
-      link: "/blog",
-      readTime: "5 MIN READ",
-    },
-    {
-      id: 3,
-      image: blog_img1,
-      category: "AI/ML",
-      title: "AI Chatbot Development: Build Bots That Scale Your Business",
-      link: "/blog",
-      readTime: "5 MIN READ",
-    },
-    {
-      id: 4,
-      image: blog_img1,
-      category: "Tech",
-      title: "Future of Web Development in 2026",
-      link: "/blog",
-      readTime: "4 MIN READ",
-    },
+     
   ];
 
   const blogData = blogs.length > 0 ? blogs : dummyBlogs;

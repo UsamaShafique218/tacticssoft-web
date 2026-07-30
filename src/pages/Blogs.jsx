@@ -11,21 +11,21 @@ const categoriesList = [
 ];
 
 const initialBlogs = [
+    // {
+    //     id: 1,
+    //     title: "Blog5",
+    //     category: "IT",
+    //     readTime: "5 MIN READ",
+    //     image: blog_img1, 
+    //     link: "/blog-detail"
+    // },
     {
         id: 1,
-        title: "Blog5",
-        category: "IT",
-        readTime: "5 MIN READ",
-        image: blog_img1, 
-        link: "/blog-detail"
-    },
-    {
-        id: 2,
         title: "AI Chatbot Development: Build Bots That Scale Your Business",
         category: "AI/ML",
         readTime: "5 MIN READ",
         image: blog_img1, 
-        link: "#"
+        link: "/blog-detail"
     }, 
 ];
 
