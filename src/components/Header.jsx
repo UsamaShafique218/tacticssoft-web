@@ -1,13 +1,16 @@
 import { useState, useEffect } from "react";
 import logo from "../assets/images/tactic-white.png";
 import black_logo from "../assets/images/tactics-black.png";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useNavigate, useLocation } from "react-router-dom"; // useNavigate aur useLocation add kiya
 
 function Header() {
     const [isSticky, setIsSticky] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [serviceOpen, setServiceOpen] = useState(false);
     const [megaMenuOpen, setMegaMenuOpen] = useState(false);
+
+    const navigate = useNavigate();
+    const location = useLocation();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -25,20 +28,35 @@ function Header() {
         }
         return () => document.body.classList.remove("isOpenMenu");
     }, [isMenuOpen]);
+ 
+    useEffect(() => {
+        if (location.pathname === "/" && location.hash === "#request-quote") {
+            const element = document.getElementById("request-quote");
+            if (element) {
+                setTimeout(() => {
+                    element.scrollIntoView({ behavior: "smooth" });
+                }, 100); // Slight delay DOM render ke liye
+            }
+        }
+    }, [location]);
 
     const closeAll = () => {
         setIsMenuOpen(false);
         setServiceOpen(false);
         setMegaMenuOpen(false);
     };
-
-
+ 
     const handleQuoteClick = (e) => {
-        closeAll(); 
-        const element = document.getElementById("request-quote");
-        if (element) {
-            e.preventDefault();
-            element.scrollIntoView({ behavior: "smooth" });
+        e.preventDefault();
+        closeAll();
+
+        if (location.pathname === "/") { 
+            const element = document.getElementById("request-quote");
+            if (element) {
+                element.scrollIntoView({ behavior: "smooth" });
+            }
+        } else { 
+            navigate("/#request-quote");
         }
     };
 
@@ -109,7 +127,7 @@ function Header() {
                             </div>
 
                             <div className="header_btn">
-                                <a href="#request-quote" className="all_btn navLink" onClick={handleQuoteClick}>
+                                <a href="/#request-quote" className="all_btn navLink" onClick={handleQuoteClick}>
                                     Free Quote
                                 </a>
                             </div>
@@ -170,6 +188,12 @@ function Header() {
                     <li><NavLink to="/blog" onClick={closeAll}>Blog</NavLink></li>
                     <li><NavLink to="/careers" onClick={closeAll}>Careers</NavLink></li>
                     <li><NavLink to="/contact" onClick={closeAll}>Contact Us</NavLink></li>
+ 
+                    <li style={{ marginTop: "15px" }}>
+                        <a href="/#request-quote" className="all_btn navLink" onClick={handleQuoteClick}>
+                            Free Quote
+                        </a>
+                    </li>
                 </ul>
             </div>
         </>
