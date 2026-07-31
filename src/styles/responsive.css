@@ -36,6 +36,8 @@
     -webkit-overflow-scrolling: touch;
   }
 
+  .header_links{ padding-right: 2em; }
+
 
 
   /*end of = (min-width: 1024px) and (max-width: 1279px)*/
@@ -219,8 +221,9 @@
       .stat_icon {
         min-height: 60px;
         max-height: 60px;
+        padding: 12px;
     }
-  .stat_icon i{ width: 30px; height: 30px; }
+  .stat_icon img{ width: 30px; height: 30px; }
   .stat_info h3{ font-size: 35px; }
 
   .testimonial_sec.section{ padding-top: 29.25em; }
@@ -251,18 +254,27 @@
   .job_card{ flex-direction: column; gap: 20px; }
   .contact_detail_sec .form_wrapper{ padding: 20px; }
   .check_list_wrapper{ flex-direction: column; }
-  .banner_footer_li{ justify-content: space-between; }
+  .banner_footer_li{ align-items: center; }
 
   .blog_details_left{ display: none; }
   .blog_detail_content{ flex-direction: column; }
   .blog_details_right{ width: 100%; }
 
   .blogs_slider_wrapper{ padding-top: 100px; }
+
+  .banner_swiper .swiper-button-prev{ left: -5px; }
+  .banner_swiper .swiper-button-next{ right: -5px;  }
+
+  .about_us_inner {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
 }
 
 @media only screen and (min-width:0px) and (max-width:520px) {
   .banner_title{ font-size: 27px; }
-  .banner_slide_content{ padding: 0px 20px; }
+  .banner_slide_content{ padding: 0px 12px; }
   .swiper-button-prev, & ~ .swiper-button-prev, &.swiper-rtl .swiper-button-next, &.swiper-rtl ~ .swiper-button-next{ left: var(--swiper-navigation-sides-offset, -4px); }
   .swiper-button-next, & ~ .swiper-button-next, &.swiper-rtl .swiper-button-prev, &.swiper-rtl ~ .swiper-button-prev{ right: var(--swiper-navigation-sides-offset, -4px); }
 
